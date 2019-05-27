@@ -14,15 +14,19 @@ var translate = SuperWidget.extend({
 	translate: function () {
 		var textIn = $('#text-entrada').val();
 
-		var constraints = new Array();
+		var langRadioInValue = $("input[name='radio_text_in']:checked").val();
+		var langRadioOutValue = $("input[name='radio_text_out']:checked").val();
+		var lang = `${langRadioInValue}-${langRadioOutValue}`;
 
+		console.log('lang = '+lang);
+
+		var constraints = new Array();
 		constraints.push(
-			DatasetFactory.createConstraint("lang", "pt-en", null, ConstraintType.MUST),
-			DatasetFactory.createConstraint("text", textIn, null, ConstraintType.MUST)
+			DatasetFactory.createConstraint('lang', lang, null, ConstraintType.MUST),
+			DatasetFactory.createConstraint('text', textIn, null, ConstraintType.MUST)
 		);
 
-		var dsTranslate = DatasetFactory.getDataset("dsTranslate", null, constraints, null);
-
+		var dsTranslate = DatasetFactory.getDataset('dsTranslate', null, constraints, null);
 		$('#text-saida').val(dsTranslate.values[0].text);
 	}
 

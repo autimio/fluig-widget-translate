@@ -6,8 +6,19 @@
 
 	<div class="form-group row">
 		<div class="col-md-5">
-			<label for="text-entrada">Texto de entrada</label>
-			<textarea name="text-entrada" id="text-entrada" class="form-control" rows="4" style="resize: vertical;"></textarea>
+			<div class="btn-group btn-group-justified" data-toggle="buttons">
+				<label class="btn btn-default active">
+					<input type="radio" name="radio_text_in" id="radio_text_in-1" value="pt" checked> Português
+				</label>
+				<label class="btn btn-default">
+					<input type="radio" name="radio_text_in" id="radio_text_in-2" value="en"> Inglês
+				</label>
+				<label class="btn btn-default">
+					<input type="radio" name="radio_text_in" id="radio_text_in-3" value="es"> Espanhol
+				</label>
+			</div>
+			<textarea name="text-entrada" id="text-entrada" class="form-control" rows="4"
+				style="resize: vertical;"></textarea>
 		</div>
 		<div class="col-md-2">
 			<label>&nbsp;</label>
@@ -16,8 +27,19 @@
 			</button>
 		</div>
 		<div class="col-md-5">
-			<label for="text-saida">Texto saída</label>
-			<textarea name="text-saida" id="text-saida" class="form-control" rows="4" style="resize: vertical;"></textarea>
+			<div class="btn-group btn-group-justified" data-toggle="buttons">
+				<label class="btn btn-default">
+					<input type="radio" name="radio_text_out" id="radio_text_out-1" value="pt"> Português
+				</label>
+				<label class="btn btn-default active">
+					<input type="radio" name="radio_text_out" id="radio_text_out-2" value="en" checked> Inglês
+				</label>
+				<label class="btn btn-default">
+					<input type="radio" name="radio_text_out" id="radio_text_out-3" value="es"> Espanhol
+				</label>
+			</div>
+			<textarea name="text-saida" id="text-saida" class="form-control" rows="4"
+				style="resize: vertical;"></textarea>
 		</div>
 	</div>
 
