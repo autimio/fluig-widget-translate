@@ -1,0 +1,16 @@
+application.type=widget
+application.code=translate
+application.title=Translate
+application.description=Tradutor utilizando API Yandex
+application.category=SYSTEM
+application.renderer=freemarker
+developer.code=autimio-PC
+developer.name=autimio
+developer.url=https://fluig.totvs.com/portal/p/10097/social/autimio.filho.totvs.com.br.10097
+application.uiwidget=true
+application.mobileapp=false
+view.file=view.ftl
+edit.file=edit.ftl
+locale.file.base.name=translate
+application.resource.js.1=/resources/js/translate.js
+application.resource.css.2=/resources/css/translate.css
